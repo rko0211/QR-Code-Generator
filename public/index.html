@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+
+  <header>
+    <h1 class="clicked-glow">QR Code Generator</h1>
+  </header>
+
+  <!-- <main> -->
+  <!-- <section class="contact-section"> -->
+  <div class="heading" style="text-align: center;">
+    <h2>Please provide the website link for which you would like to generate a QR code.
+    </h2>
+  </div>
+
+  <div class="Formcontainer">
+
+    <form action="/submit" method="post">
+      <label for="link">Enter Link:</label>
+      <input type="text" id="link" name="link" required>
+      <!-- <button type="submit">Submit</button> -->
+      <br><br>
+      <input type="submit" value="Generate">
+    </form>
+  </div>
+  <div class="imgcontainer">
+    <img src="/qr_img.png" alt="QR_IMG" srcset="">
+  </div>
+
+  <div class="note">
+    <p>
+      <span><b>Note:</b></span> To download the QR code image, right-click on the image and select "Save image as..."
+      from the context menu. Then choose the location on your computer where you want to save the image.
+    </p>
+  </div>
+  <!-- Footer start -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="spt-logo">
+        <img src="./covers/Spotify-White-Logo.png" alt="">
+      </div>
+      <div class="panel2">
+        <div class="foot">
+          <div class="company">
+            <ul>
+              <div class="main-head">Company</div>
+              <a href="index.html" style="text-decoration: none; color: #fff;">
+                <li>Home</li>
+              </a>
+              <a href="about.html" style="text-decoration: none; color: #fff;">
+                <li>About</li>
+              </a>
+              <a href="Purpose.html" style="text-decoration: none; color: #fff;">
+                <li>Purpose</li>
+              </a>
+              <li>Jobs</li>
+              <li>For the Record</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <ul>
+              <div class="main-head">Communities</div>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Investors</li>
+
+            </ul>
+          </div>
+
+          <div class="company">
+            <ul>
+              <div class="main-head">Useful links</div>
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 1</li>
+              </a>
+
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 2</li>
+              </a>
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 3</li>
+              </a>
+
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 4</li>
+              </a>
+
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 5</li>
+              </a>
+
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 6</li>
+              </a>
+
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 7</li>
+              </a>
+
+              <a href="#" style="text-decoration: none; color: #fff;">
+                <li>QR Code 8</li>
+              </a>
+
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="social-icons">
+          <div class="icon_border"> <a href="https://github.com/rko0211"><img src="github.png" alt="Github"></a>
+          </div>
+          <div class="icon_border LD-fb"><a href="https://www.linkedin.com/in/prakash-mondal-94bb7a22a/"><img
+                src="Linkdin.webp" alt="Linkdln"></div>
+          <div class="icon_border"><a href="https://www.youtube.com/@learntime2424"><img src="youtube.png"
+                alt="youtube"></div>
+          <div class="icon_border LD-fb"><a href="#"><img src="facebook.avif" alt="facebook"></div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div class="panel3">
+      <p>&copy; <span id="year"></span> LEARN TIME</p>
+    </div>
+    <br><br>
+  </footer>
+
+  <!-- Footer End -->
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+
+
+</body>
+
+</html>
